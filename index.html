@@ -2,8 +2,9 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>In Kelly's Head</title>
+  <title>Kelly Szeto</title>
 	<style>
+
 h1 {
 font-family: "TS BLOCK", sans-serif;
 color: 181818;
@@ -14,12 +15,33 @@ h2 {
 font-size: 55px;
 }
     
+h3 {
+font-family: "TS BLOCK", sans-serif;
+color: white;
+text-align: center;
+}
+    
 body {
 font-family: "helvetica";
 font-size: 18px;
 background-color: white;
 }
 
+p {
+font-family: "helvetica";
+font-size: 18px;
+color: 181818;
+}
+
+/*
+Code copied from: https://www.w3schools.com/html/html_lists_unordered.asp
+Author: w3schools.com
+Name: Horizontal List with CSS
+Description: Creates a horizontal list
+Date retrieved: Dec. 1, 2023
+*/
+
+/* Copied code starts */
 
 ul {
   list-style-type: none;
@@ -45,19 +67,96 @@ li a:hover {
   border-style: solid;
   background-color: white;
 }
+/* Copied code ends */
 
-  article {
+/*
+Code copied from: https://www.w3schools.com/html/html_layout.asp
+Author: w3schools.com
+Name: HTML Layout Elements and Techniques
+Description: Creates sections/divisions on the page
+Date retrieved: Dec. 8, 2023
+*/
+
+/* Copied code starts */
+nav {
   float: left;
+  width: 30%;
+  height: 300px; 
+  background: white;
   padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+} 
+    
+  article {
+  float: right;
+  padding: 20px;
+  width: 60%;
+  background-color: #ccc;
+  height: 400px; 
 }
     
-section {
+section::after {
   content: "";
   display: table;
   clear: both;
+  padding: 50px;
+}
+
+/*
+Code copied from: https://www.w3schools.com/html/html_layout.asp
+Author: w3schools.com
+Name: HTML Layout Elements and Techniques
+Description: Creates sections/divisions on the page
+Date retrieved: Dec. 8, 2023
+*/
+
+/* Copied code starts */
+    #container1 {
+      width: 100%;
+      background-color: transparent;
+      clear: both;
+      position: relative;
+      bottom: 20px;
+    }
+
+    #blockA {
+      background-color: #181818;
+      width: 100%;
+      height: 145px;
+      display: inline;
+      float: left;
+      font-size: 18px;
+      color: white;
+      text-align: center;
+    }
+/* Copied code ends */
+    
+    #container2 {
+      width: 100%;
+      background-color: transparent;
+      clear: both;
+      position: relative;
+      bottom: 20px;
+    }
+
+    #blockB {
+      background-color: transparent;
+      width: 100%;
+      height: 400px;
+      display: inline;
+      float: center;
+      font-size: 18px;
+    }
+    
+table {
+  font-family: hevetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1.5px solid #000000;
+  text-align: left;
+  padding: 8px;
 }
     
   </style>
@@ -65,25 +164,73 @@ section {
 <body>
 <h1>KELLY SZETO</h1>
 <ul>
-  <li><a href="#Favourite Songs">Favourite Songs</a></li>
-  <li><a href="#Wishlist">Wishlist</a></li>
-  <li><a href="#Interests">Interests</a></li>
+  <li><a href="#Contact">Contact</a></li>
+  <li><a href="#Favourites">Favourites</a></li>
+  <li><a href="#CURRENT INTERESTS">Interests</a></li>
 </ul>
-<img src="https://i.pinimg.com/564x/61/fa/a2/61faa21da00dd7498984ffc8d4e72a5f.jpg" alt="black and white edgy background" width="1920" height="300">
+<img src="https://i.pinimg.com/564x/61/fa/a2/61faa21da00dd7498984ffc8d4e72a5f.jpg" alt="black and white edgy background" width="100%" height="300">
 <h2>
   "THE WORLD IS WHAT YOU MAKE OF IT."
   </h2>
-  
+
+<!-- INTERESTS SECTION -->
 <section>
+    <nav>
+      <img src="https://i.pinimg.com/564x/80/4f/0c/804f0cb1334abb56db0eda7164d2d487.jpg" alt="girl taking picture with camera" width="350" height="210">
+      <img src="https://i.pinimg.com/564x/46/b5/94/46b594cb30652825e73e64cdcbd0e596.jpg" alt="edgy cyber-core gel nails" width="350" height="210">
+  </nav>
 <article>
-    <h1>CURRENT INTERESTS</h1>
-    <p>camera</p>
-    <p>vlogging</p>
-  	<p>nails</p>
+  <h1><a name="CURRENT INTERESTS">CURRENT INTERESTS</a></h1>
+    <p><strong><u>VLOGGING</u></strong></p>
+    <p>Becoming a vlogger has been one of my biggest dreams since the age of 8. I began creating and uploading
+		videos on Youtube when I was 10 years old, however, the fear of judgement from my peers had always stopped me from continuing.
+		Now, at 19 years old, I have decided to push through my fears with confidence to pursue my dream.</p>
+		<p><strong><u>NAILS</u></strong></p>
+		<p>Learning how to do gel nails at home is a new hobby that I have decided to dive into for the winter break.
+      It's become so popular to get your nails done that I rarely see anyone without them now. This became an expensive
+      monthly expense for me, which led me to doing my own at home to save money.
+      
+  </p>
   </article>
 </section>
 
+<!-- FAVOURITES SECTION -->
+    <div id="container2">
+      <div id="blockB">
+	<h1 style="font-size: 23px"><a name="Favourites">CURRENT FAVOURITES</a></h1>
+  <table>
+  <tr>
+    <td><i> Makeup by Flower Knows </i></td>
+    <td style="text-align: center;"><img src="https://flowerknows.co/cdn/shop/collections/32671.jpg?v=1661483744" alt="lipstick from the brand flower knows" width="400" height="300"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="https://daoinsights.com/wp-content/uploads/2023/11/gm-cover.jpg" alt="futuristic glasses advertisement poster featuring suited models with machinery" width="400" height="300"></td>
+    <td><i> Gentle Monster - The brand concept & the glasses </i></td>
+  </tr>
+  <tr>
+    <td><i> Art by Yoshitomo Nara </i></td>
+    <td style="text-align: center;"><img src="https://sothebys-com.brightspotcdn.com/f3/19/e41893ff4dfaa52b3bd1ae372de1/yoshitomo-nara-com-parede.jpg" alt="Yoshitomo Nara working on a painting" width="400" height="300"></td>
+  </tr>
+  <tr>
+    <td style="text-align: center;"><img src="https://pen-online.com/fr/wp-content/uploads/2019/04/25070704/%C2%A9-madd-bordeaux-1024x1024.jpg" alt="room filled with japanese paper lamps" width="400" height="300"></td>
+    <td><i> Japanese Paper Lamps </i></td>
+  </tr>
+</table>
+      </div>
+  </div>
 
+  
+<!-- CONTACT SECTION -->
+    <div id="container1">
+      <div id="blockA">
+        <h3><a name="Contact">✮ THANK YOU FOR VISITING MY SITE ✮</a></h3>
+        <p style="color: white;"> Have any questions or want to connect with me? Check out my contact information below!</p>
+        <p style="text-align: center;">
+          <a href="https://www.instagram.com/kellyzeto/?hl=en" target="_blank">@kellyzeto</a> |
+          <a href="mailto:k9szeto@uwaterloo.ca">k9szeto@uwaterloo.ca</a>
+        </p>
+      </div>
+  </div>
   
 </body>
 </html>
